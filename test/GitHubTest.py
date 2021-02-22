@@ -13,7 +13,7 @@ repo = str(sys.argv[4])
 issueNumber = int(sys.argv[5])
 issueTitle = str(sys.argv[6])
 
-myGithub = GitHub(url,key)
+myGithub = GitHub(key)
 myIssue = myGithub.getIssueByNumber(org,repo,30)
 
 assert myIssue['data']['repository']['issue'+str(issueNumber)]['title'] == issueTitle
