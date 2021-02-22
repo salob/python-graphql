@@ -12,7 +12,7 @@ class GitHub(object):
     '''
 
 
-    def __init__(self,apiUrl,ghKey):
+    def __init__(self,ghKey,apiUrl="https://api.github.com/graphql"):
         '''
         Constructor
         '''
